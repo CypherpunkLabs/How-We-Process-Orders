@@ -21,7 +21,7 @@ Our canary will be live soon with our keys and verification process of notificat
 We do plan to open source 99% of our backend services over time. Originally these were created with minimum features. The only code we will not be open sourcing
 will be our API keys to providers and such. So you would be able to facilitate running your own operation with our tooling. We find this important so that the 
 ideas and processes could be used for other software services. We value healthy competition as well as support innovative takes on existing ideas. We are also
-a promoter of FOSS. You should expect to see some of this code to be available soon as we refine it and make it better for general use, as it sits right now some changes
+a promoter of FOSS(Free and open-source software). You should expect to see some of this code to be available soon as we refine it and make it better for general use, as it sits right now some changes
 are being made to make it much more flexible with other providers. We are also going to distribute some Rust libraries to include in your own projects for the future. 
 
 Our backend is 100% Rust.
@@ -34,6 +34,8 @@ information or further details from the user. PayPal obviously does have this da
 requested by law enforcement. We do not have such data and simply use their API to request details. Our API check runs once a minute. 
 
 https://developer.paypal.com/docs/api/orders/v2/#orders_get
+
+We only request order type, duration, and region(coming soon to the site).
 
 As we do not offer refunds in anyway it is important to understand that we do not have access to the console for PayPal. We run a process every day at 4:30pm Central Time
 to send any PayPal order money received to the company bank. We do this for consistency and auditing on our end with all cryptocurrency payments too. As we are a transparent
